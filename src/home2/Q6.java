@@ -3,27 +3,12 @@ package home2;
 public class Q6 {
 	public static void main(String[] args) {
 		int count = 0;
-		int num = 1;
-		while (num <= 49) {
-			int temp = num;
-			boolean Four = false;
-
-			while (temp > 0) {
-				if (temp % 10 == 4) {
-					Four = true;
-					break;
-				}
-				temp /= 10;
+		for (int i = 1; i <= 39; i++) {//數1~39
+			if (i % 10 != 4) { // 檢查數字是否包含 4
+				System.out.print(i + " ");
+				count += 1;
 			}
-
-			if (!Four) {
-				System.out.println(num);
-				count++;
-			}
-
-			num++;
 		}
-
-		System.out.println("可以選擇的數字總共有 " + count + " 個數字");
+		System.out.print("總共"+count+"個");
 	}
 }
