@@ -3,12 +3,13 @@ package home2;
 public class Q6 {
 	public static void main(String[] args) {
 		int count = 0;
-		for (int i = 1; i <= 39; i++) {//數1~39
+		for (int i = 1; i < 40; i++) {//數1~39
 			if (i % 10 != 4) { // 檢查數字是否包含 4
 				System.out.print(i + " ");
 				count += 1;
 			}
 		}
-		System.out.print("總共"+count+"個");
+		System.out.println("");
+		System.out.println("總共"+count+"個");
 	}
 }
